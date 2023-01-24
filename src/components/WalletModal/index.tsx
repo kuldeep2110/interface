@@ -29,7 +29,7 @@ import { isMobile } from 'utils/userAgent'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 import { useModalIsOpen, useToggleWalletModal } from '../../state/application/hooks'
 import { ApplicationModal } from '../../state/application/reducer'
-import { ExternalLink, ThemedText } from '../../theme'
+import { ThemedText } from '../../theme'
 import AccountDetails from '../AccountDetails'
 import Modal from '../Modal'
 import { CoinbaseWalletOption, OpenCoinbaseWalletOption } from './CoinbaseWalletOption'
@@ -327,17 +327,17 @@ export default function WalletModal({
     function getTermsOfService(walletView: string) {
       if (walletView === WALLET_VIEWS.PENDING) return null
 
-      const content = (
-        <Trans>
-          By connecting a wallet, you agree to Uniswap Labs’{' '}
-          <ExternalLink href="https://uniswap.org/terms-of-service/">Terms of Service</ExternalLink> and consent to its{' '}
-          <ExternalLink href="https://uniswap.org/privacy-policy">Privacy Policy</ExternalLink>.
-        </Trans>
-      )
+      // const content = (
+      //   <Trans>
+      //     By connecting a wallet, you agree to Uniswap Labs’{' '}
+      //     <ExternalLink href="https://uniswap.org/terms-of-service/">Terms of Service</ExternalLink> and consent to its{' '}
+      //     <ExternalLink href="https://uniswap.org/privacy-policy">Privacy Policy</ExternalLink>.
+      //   </Trans>
+      // )
       return (
         <AutoRow style={{ flexWrap: 'nowrap', padding: '4px 16px' }}>
           <ThemedText.BodySecondary fontSize={16} lineHeight="24px">
-            {content}
+            {/* {content} */}
           </ThemedText.BodySecondary>
         </AutoRow>
       )

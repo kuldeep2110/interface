@@ -245,7 +245,7 @@ export default function App() {
                 <Route path="migrate/v2" element={<MigrateV2 />} />
                 <Route path="migrate/v2/:address" element={<MigrateV2Pair />} />
 
-                <Route
+                {/* <Route
                   path="/nfts"
                   element={
                     <Suspense fallback={null}>
@@ -260,8 +260,8 @@ export default function App() {
                       <Asset />
                     </Suspense>
                   }
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/nfts/profile"
                   element={
                     <Suspense fallback={null}>
@@ -284,7 +284,7 @@ export default function App() {
                       <Collection />
                     </Suspense>
                   }
-                />
+                /> */}
 
                 <Route path="*" element={<Navigate to="/not-found" replace />} />
                 <Route path="/not-found" element={<NotFound />} />
