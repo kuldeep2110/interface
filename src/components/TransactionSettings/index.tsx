@@ -47,7 +47,8 @@ const Option = styled(FancyButton)<{ active: boolean }>`
   :hover {
     cursor: pointer;
   }
-  background-color: ${({ active, theme }) => active && theme.accentAction};
+  background-color: #ffac2a;
+  // background-color: ${({ active, theme }) => active && theme.accentAction};
   color: ${({ active, theme }) => (active ? theme.white : theme.textPrimary)};
 `
 

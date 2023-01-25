@@ -66,21 +66,25 @@ export const BaseButton = styled(RebassButton)<BaseButtonProps>`
 `
 
 export const ButtonPrimary = styled(BaseButton)`
-  background-color: ${({ theme }) => theme.accentAction};
+  background: linear-gradient(80deg, #e6a807, #960 50%);
+  // background-color: ${({ theme }) => theme.accentAction};
   font-size: 20px;
   font-weight: 600;
   padding: 16px;
   color: ${({ theme }) => theme.accentTextLightPrimary};
   &:focus {
     box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.05, theme.accentAction)};
-    background-color: ${({ theme }) => darken(0.05, theme.accentAction)};
+    background: linear-gradient(80deg, #960, #e6a807 50%);
+    // background: ${({ theme }) => darken(0.05, theme.accentAction)};
   }
   &:hover {
-    background-color: ${({ theme }) => darken(0.05, theme.accentAction)};
+    background: linear-gradient(80deg, #960, #e6a807 50%);
+    // background: ${({ theme }) => darken(0.05, theme.accentAction)};
   }
   &:active {
     box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.1, theme.accentAction)};
-    background-color: ${({ theme }) => darken(0.1, theme.accentAction)};
+    background: linear-gradient(80deg, #960, #e6a807 50%);
+    // background: ${({ theme }) => darken(0.1, theme.accentAction)};
   }
   &:disabled {
     background-color: ${({ theme, altDisabledStyle, disabled }) =>

@@ -27,7 +27,8 @@ const StyledMenuIcon = styled(Settings)`
   width: 20px;
 
   > * {
-    stroke: ${({ theme }) => theme.textSecondary};
+    stroke: #ffac2a;
+    // stroke: ${({ theme }) => theme.textSecondary};
   }
 `
 

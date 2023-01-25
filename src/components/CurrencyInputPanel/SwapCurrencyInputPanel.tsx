@@ -59,7 +59,8 @@ const CurrencySelect = styled(ButtonGray)<{
   disabled?: boolean
 }>`
   align-items: center;
-  background-color: ${({ selected, theme }) => (selected ? theme.backgroundInteractive : theme.accentAction)};
+  background: linear-gradient(80deg, #e6a807, #960 50%);
+  // background-color: ${({ selected, theme }) => (selected ? theme.backgroundInteractive : theme.accentAction)};
   opacity: ${({ disabled }) => (!disabled ? 1 : 0.4)};
   box-shadow: ${({ selected }) => (selected ? 'none' : '0px 6px 10px rgba(0, 0, 0, 0.075)')};
   color: ${({ selected, theme }) => (selected ? theme.textPrimary : theme.white)};
@@ -79,7 +80,8 @@ const CurrencySelect = styled(ButtonGray)<{
 
   &:hover,
   &:active {
-    background-color: ${({ theme, selected }) => (selected ? theme.backgroundInteractive : theme.accentAction)};
+    background: linear-gradient(80deg, #960 50%, #e6a807);
+    // background-color: ${({ theme, selected }) => (selected ? theme.backgroundInteractive : theme.accentAction)};
   }
 
   &:before {

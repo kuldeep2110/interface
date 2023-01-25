@@ -25,9 +25,11 @@ export const PageWrapper = styled.div`
 // Mostly copied from `AppBody` but it was getting too hard to maintain backwards compatibility.
 export const SwapWrapper = styled.main`
   position: relative;
-  background: ${({ theme }) => theme.backgroundSurface};
+  background: #0a0a0acc;
+  // background: ${({ theme }) => theme.backgroundSurface};
   border-radius: 16px;
-  border: 1px solid ${({ theme }) => theme.backgroundOutline};
+  border: 1px solid #d59905;
+  // border: 1px solid ${({ theme }) => theme.backgroundOutline};
   padding: 8px;
   z-index: ${Z_INDEX.deprecated_content};
   transition: transform 250ms ease;

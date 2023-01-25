@@ -1,4 +1,3 @@
-import { darken } from 'polished'
 import { useState } from 'react'
 import styled, { keyframes } from 'styled-components/macro'
 
@@ -42,7 +41,8 @@ const ToggleElementHoverStyle = (hasBgColor: boolean, theme: any, isActive?: boo
         opacity: '0.8',
       }
     : {
-        background: isActive ? darken(0.05, theme.accentAction) : darken(0.05, theme.deprecated_bg4),
+        background: '#ffac2a',
+        // background: isActive ? darken(0.05, theme.accentAction) : darken(0.05, theme.deprecated_bg4),
         color: isActive ? theme.white : theme.textTertiary,
       }
 
