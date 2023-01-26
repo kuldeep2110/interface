@@ -279,7 +279,7 @@ function Web3StatusInner() {
         properties={{ received_swap_quote: validSwapQuote }}
         element={InterfaceElementName.CONNECT_WALLET_BUTTON}
       >
-        <Web3StatusConnectWrapper faded={!account}>
+        {/* <Web3StatusConnectWrapper faded={!account}>
           <StyledConnectButton data-testid="navbar-connect-wallet" onClick={toggleWalletModal}>
             <Trans>Connect</Trans>
           </StyledConnectButton>
@@ -287,7 +287,7 @@ function Web3StatusInner() {
           <ChevronWrapper onClick={handleWalletDropdownClick} data-testid="navbar-toggle-dropdown">
             {walletIsOpen ? <ChevronUp {...chevronProps} /> : <ChevronDown {...chevronProps} />}
           </ChevronWrapper>
-        </Web3StatusConnectWrapper>
+        </Web3StatusConnectWrapper> */}
       </TraceEvent>
     )
   }
