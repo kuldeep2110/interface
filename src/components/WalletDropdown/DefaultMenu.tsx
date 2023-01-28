@@ -169,8 +169,8 @@ const WalletDropdown = ({ setMenu }: { setMenu: (state: MenuState) => void }) =>
             <ChevronRight size={16} strokeWidth={3} />
           </IconWrap>
         </FlexContainer>
-      </ToggleMenuItem> */}
-      {/* <ToggleMenuItem data-testid="wallet-select-theme" onClick={toggleDarkMode}>
+      </ToggleMenuItem>
+      <ToggleMenuItem data-testid="wallet-select-theme" onClick={toggleDarkMode}>
         <DefaultText>{darkMode ? <Trans> Light theme</Trans> : <Trans>Dark theme</Trans>}</DefaultText>
         <IconWrap>{darkMode ? <Sun size={16} /> : <Moon size={16} />}</IconWrap>
       </ToggleMenuItem> */}
