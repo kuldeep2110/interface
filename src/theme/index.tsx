@@ -3,8 +3,8 @@ import React, { useMemo } from 'react'
 import { createGlobalStyle, css, ThemeProvider as StyledComponentsThemeProvider } from 'styled-components/macro'
 
 import { useIsDarkMode } from '../state/user/hooks'
-import { darkTheme, lightTheme } from './colors'
-import { darkDeprecatedTheme, lightDeprecatedTheme } from './deprecatedColors'
+import { darkTheme } from './colors'
+import { darkDeprecatedTheme } from './deprecatedColors'
 
 // todo - remove and replace imports with a new path
 export * from './components'
@@ -96,8 +96,10 @@ function getSettings(darkMode: boolean) {
 export function getTheme(darkMode: boolean) {
   return {
     darkMode,
-    ...(darkMode ? darkTheme : lightTheme),
-    ...(darkMode ? darkDeprecatedTheme : lightDeprecatedTheme),
+    ...(darkMode ? darkTheme : darkTheme),
+    // ...(darkMode ? darkTheme : lightTheme),
+    ...(darkMode ? darkDeprecatedTheme : darkDeprecatedTheme),
+    // ...(darkMode ? darkDeprecatedTheme : lightDeprecatedTheme),
     ...getSettings(darkMode),
   }
 }
