@@ -38,5 +38,5 @@ function getDeprecatedTheme(darkMode: boolean) {
   }
 }
 
-export const lightDeprecatedTheme = getDeprecatedTheme(false)
+// export const lightDeprecatedTheme = getDeprecatedTheme(false)
 export const darkDeprecatedTheme = getDeprecatedTheme(true)
